@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  max-width: 100%;
+  overflow-x: hidden;
+  height: fit-content;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'heroSection'
+    'latestPost__heading'
+    'latestPost__section';
+  width: 100%;
+  height: fit-content;
+}
+
+.heroSection {
+  grid-area: heroSection;
+  background-image: url(../img/michal-pechardo-1HkVV14d8Bg-unsplash-compressed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+
+.heroBtn__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: 550px;
+}
+
+.heroBtn {
+  width: 140px;
+  height: 35px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+  background-color: var(--mainBlack);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px var(--white);
+}
+
+.heroBtn:hover {
+  background-color: var(--white);
+  border: solid 2px var(--secondaryBlack);
+  color: var(--mainBlack);
+}
+
+.latestPosts__heading {
+  grid-area: latestPost__heading;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 80px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
