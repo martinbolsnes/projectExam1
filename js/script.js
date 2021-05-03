@@ -12,7 +12,7 @@ async function getPosts() {
     /* document.querySelector('.loading').classList.add('hide'); */
 
     for (let i = 0; i < postsResults.length; i++) {
-      document.querySelector('.latestPost__section').innerHTML += `
+      document.querySelector('.latestPosts__cards').innerHTML += `
       <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
       <div class="titleBackground">
       <a class="blogLink" href="blog.js?id=${postsResults[i].id}">

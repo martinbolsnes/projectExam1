@@ -11,6 +11,7 @@ header {
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
   position: fixed;
+  z-index: 1;
 }
 
 ul li {
