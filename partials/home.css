@@ -42,10 +42,10 @@ main {
 }
 
 .heroBtn {
-  width: 140px;
-  height: 35px;
+  width: 155px;
+  height: 45px;
   font-family: 'Jost', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background-color: var(--mainBlack);
   color: var(--white);
   border: none;
