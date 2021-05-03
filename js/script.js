@@ -13,11 +13,10 @@ async function getPosts() {
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.latestPost__section').innerHTML += `
-      <div class="card">
-        <img class="cardImg src="${postsResults[i]._embedded['wp:featuredmedia']['0'].link}">
-        <div class="titleBackground">
-        <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
-        </div> 
+      <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
+      <div class="titleBackground">
+      <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
+      </div>
       </div>`;
 
       if (i === 2) {

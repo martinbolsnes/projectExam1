@@ -8,7 +8,9 @@ header {
   flex-direction: row;
   align-items: center;
   background-color: var(--mainBlack);
-  box-shadow: 0.5px 0.5px var(--secondaryBlack);
+  -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
+  box-shadow: 0 0 5px var(--secondaryBlack);
+  position: fixed;
 }
 
 ul li {
