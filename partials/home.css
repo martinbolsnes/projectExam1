@@ -119,3 +119,7 @@ main {
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
 }
+
+.blogLink {
+  text-decoration: none;
+}
