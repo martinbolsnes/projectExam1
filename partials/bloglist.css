@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  max-width: 100%;
+  overflow-x: hidden;
+  height: fit-content;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'blogList__heading'
+    'blogList__section';
+  width: 100%;
+  display: flex;
+}
+
+.blogList__heading {
+  grid-area: blogList__heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: 'Jost', sans-serif;
+}
+
+.blogList__section {
+  grid-area: blogList__section;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewMoreBtn {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 45px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.3rem;
+  background-color: var(--white);
+  color: var(--mainBlack);
+  border: solid 2px var(--mainBlack);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px var(--secondaryBlack);
+  box-shadow: 0 0 3px var(--secondaryBlack);
+  cursor: pointer;
+}
+
+.viewMoreBtn:hover {
+  background-color: var(--mainBlack);
+  color: var(--white);
+}

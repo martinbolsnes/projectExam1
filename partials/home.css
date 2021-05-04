@@ -54,6 +54,7 @@ main {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
+  cursor: pointer;
 }
 
 .heroBtn:hover {

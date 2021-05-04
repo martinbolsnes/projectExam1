@@ -1,0 +1,22 @@
+footer {
+  height: 140px;
+  background-color: var(--footerGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-box-shadow: 0 0 2px var(--secondaryBlack);
+  box-shadow: 0 0 2px var(--secondaryBlack);
+}
+
+.footerLink__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLink {
+  padding: 8px;
+}
+
+.soMeLinks {
+  font-size: 1.5rem;
+}
