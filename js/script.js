@@ -38,3 +38,9 @@ async function getPosts() {
 }
 
 getPosts(postsUrl);
+
+/* $('.latestPosts__cards').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+}); */
