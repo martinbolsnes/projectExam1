@@ -3,9 +3,10 @@ footer {
   background-color: var(--footerGray);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   -webkit-box-shadow: 0 0 2px var(--secondaryBlack);
   box-shadow: 0 0 2px var(--secondaryBlack);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footerLink__container {
@@ -15,6 +16,13 @@ footer {
 
 .footerLink {
   padding: 8px;
+  text-decoration: none;
+}
+
+.footerLink,
+.copyright,
+.soMeLinks {
+  color: var(--mainBlack);
 }
 
 .soMeLinks {
