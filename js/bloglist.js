@@ -9,7 +9,7 @@ async function getPosts() {
     console.log(jsonFromServer);
     const postsResults = jsonFromServer;
 
-    /* document.querySelector('.loading').classList.add('hide'); */
+    document.querySelector('.loading').classList.add('hide');
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.blogList__section').innerHTML += `
