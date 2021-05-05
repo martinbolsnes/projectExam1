@@ -1,35 +1,29 @@
-const postsUrl = '';
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get('id');
 
-async function getPosts() {
+async function getOnePost(postId) {
   try {
-    const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts'
+    const response = await fetch(
+      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed' + postId
     );
-    const jsonFromServer = await repsonse.json();
-    console.log(jsonFromServer);
-    const postsResults = jsonFromServer;
+    const jsonResults = await response.json();
+    const postsArray = jsonResults;
+    console.log(postsArray);
 
-    /* document.querySelector('.loading').classList.add('hide'); */
-
-    for (let i = 0; i < postsResults.length; i++) {
-      document.querySelector('main').innerHTML += `
-      <h2 class="blog__heading">${postsResults[i].title.rendered}</h2>  
-      <div>${postsResults[i].content.rendered}</div>`;
-
-      if (i === 0) {
-        break;
-      }
-    }
+    document.querySelector(
+      '.blog__container'
+    ).innerHTML = `${postsArray.content.rendered}`;
   } catch {
     /* document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
       'error'
     ); */
   } finally {
-    /*  setTimeout(function () {
+    /* setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
     }, 3000); */
   }
 }
 
-getPosts(postsUrl);
+getOnePost(id);

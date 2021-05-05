@@ -15,7 +15,7 @@ async function getPosts() {
       document.querySelector('.latestPosts__cards').innerHTML += `
       <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
         <div class="titleBackground">
-          <a class="blogLink" href="blog.js?id=${postsResults[i].id}">
+          <a class="blogLink" href="blog.html?id=${postsResults[i].id}">
           <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
           </a>
         </div>
