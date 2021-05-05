@@ -14,11 +14,11 @@ async function getPosts() {
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.latestPosts__cards').innerHTML += `
       <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
-      <div class="titleBackground">
-      <a class="blogLink" href="blog.js?id=${postsResults[i].id}">
-      <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
-      </a>
-      </div>
+        <div class="titleBackground">
+          <a class="blogLink" href="blog.js?id=${postsResults[i].id}">
+          <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
+          </a>
+        </div>
       </div>`;
 
       if (i === 2) {
@@ -31,16 +31,10 @@ async function getPosts() {
       'error'
     ); */
   } finally {
-    /*  setTimeout(function () {
+    /* setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
     }, 3000); */
   }
 }
 
 getPosts(postsUrl);
-
-/* $('.latestPosts__cards').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-}); */
