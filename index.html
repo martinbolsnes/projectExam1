@@ -17,6 +17,7 @@
     <link rel="mask-icon" href="img/favicon_package_v0.16 (1)/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="partials/splide/splide.min.css">
     <title>Home - Wanderlust</title>
 </head>
 <body>
@@ -47,9 +48,42 @@
             <h2 class="latestPosts__heading--text">Latest Posts</h2>
         </div>
         <section class="latestPost__section">
-            <!-- <i class="fas fa-caret-left"></i> -->
-            <div class="latestPosts__cards"></div>
-            <!-- <i class="fas fa-caret-right"></i> -->
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" id="slide01">
+                            <div class="splide__container">
+                                <img src="img/stefan-widua-9I2t_U-9Gog-unsplash-compressed.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide" id="slide02">
+                            <div class="splide__container">
+                                <img src="img/mesut-kaya-eOcyhe5-9sQ-unsplash-compressed.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide" id="slide03">
+                            <div class="splide__container">
+                                <img src="img/jezael-melgoza-layMbSJ3YOE-unsplash-compressed.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide" id="slide04">
+                            <div class="splide__container">
+                                <img src="img/federico-di-dio-photography-nDZolucukwU-unsplash.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide" id="slide05">
+                            <div class="splide__container">
+                                <img src="img/andrea-leopardi-QVD3Xht9txA-unsplash-compressed.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide" id="slide06">
+                            <div class="splide__container">
+                                <img src="img/oliver-niblett-wh-7GeXxItI-unsplash-compressed.jpg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -68,5 +102,6 @@
     </footer>
     <script src="js/components/alert.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/splide/splide.min.js"></script>
     </body>
 </html>

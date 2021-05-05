@@ -1,4 +1,4 @@
-const postsUrl = '';
+/* const postsUrl = '';
 
 async function getPosts() {
   try {
@@ -9,7 +9,7 @@ async function getPosts() {
     console.log(jsonFromServer);
     const postsResults = jsonFromServer;
 
-    /* document.querySelector('.loading').classList.add('hide'); */
+    document.querySelector('.loading').classList.add('hide');
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.latestPosts__cards').innerHTML += `
@@ -26,15 +26,23 @@ async function getPosts() {
       }
     }
   } catch {
-    /* document.querySelector('.alert').innerHTML = showAlertTouser(
+    document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
       'error'
-    ); */
+    );
   } finally {
-    /* setTimeout(function () {
+    setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
-    }, 3000); */
+    }, 3000);
   }
 }
 
-getPosts(postsUrl);
+getPosts(postsUrl); */
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type: 'loop',
+    perPage: 3,
+    focus: 'center',
+  }).mount();
+});
