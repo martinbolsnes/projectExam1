@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--white);
-  max-width: 100%;
+  max-width: 1280px;
   height: fit-content;
   -ms-overflow-style: none;
   scrollbar-width: none;
