@@ -12,16 +12,8 @@ async function getPosts() {
     document.querySelector('.loading').classList.add('hide');
 
     for (let i = 0; i < postsResults.length; i++) {
-      document.querySelector('.latestPosts__cards').innerHTML += `
-      <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
-        <div class="titleBackground">
-          <a class="blogLink" href="blog.html?id=${postsResults[i].id}">
-          <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
-          </a>
-        </div>
-      </div>`;
 
-      if (i === 2) {
+      if (i === 5) {
         break;
       }
     }
