@@ -1,6 +1,6 @@
 const postsUrl = '';
 
-async function getAllPosts() {
+async function getPosts() {
   try {
     const repsonse = await fetch(
       'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed'
@@ -33,4 +33,4 @@ async function getAllPosts() {
   }
 }
 
-getAllPosts(postsUrl);
+getPosts(postsUrl);

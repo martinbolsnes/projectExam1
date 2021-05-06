@@ -30,7 +30,35 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="contact__heading">
+            <h1>Contact us</h1>
+        </div>
+        <section class="contactForm__section">
+            <div class="contactForm__container">
+            <form class="contactForm">
+                <label for="subject"></label>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <p class="formError subjectError">Please enter your subject</p>
+                <label for="fullName"></label>
+                <input type="text" name="fullName" id="fullName" placeholder="Name">
+                <p class="formError fullNameError">Please enter your name</p>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <p class="formError emailError">Please enter a valid email</p>
+                <label for="message"></label> 
+                <input type="text" name="message" id="message" placeholder="Message...">
+                <p class="formError messageError"></p>
+        
+                <button id="submitBtn">Submit</button>
+            </form>
+        </div>
+            <div id="imgToClick" class="contactImg__container"></div>
+            <div id="imgModal" class="modal02">
+                <span class="close">&times;</span>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footerLink__container">
         <p class="footerLink"><a class="footerLink" href="contact.html">Contact</a></p>
@@ -45,5 +73,7 @@
             <i class="fab fa-pinterest-square"></i>
         </div>
     </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
