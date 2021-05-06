@@ -156,3 +156,15 @@ main {
   color: var(--mainBlack);
   cursor: pointer;
 }
+
+@media (max-width: 1023px) {
+  .aboutParagraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutParagraph {
+    font-size: 0.9rem;
+  }
+}
