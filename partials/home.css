@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body::-webkit-scrollbar {
   display: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--white);
   max-width: 1280px;
   height: fit-content;

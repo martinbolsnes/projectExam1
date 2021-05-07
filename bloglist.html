@@ -21,13 +21,30 @@
 </head>
 <body>
     <header>
-        <h2><a href="index.html" class="active-page" class="logo">Wanderlust</a></h2>
+        <div class="logo">
+            <h2><a href="index.html">Wanderlust</a></h2>
+        </div>
         <nav>
-            <ul>
-                <li><a href="bloglist.html">BLOG</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <div class="hamburgerMenu">
+                <ul class="hamburgerMenu__list">
+                    <li class="hamburgerMenu__list--item"><a href="index.html" class="active">HOME</a></li>
+                    <li class="hamburgerMenu__list--item"><a href="bloglist.html">BLOG</a></li>
+                    <li class="hamburgerMenu__list--item"><a href="about.html">ABOUT</a></li>
+                    <li class="hamburgerMenu__list--item"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul class="nav__list">
+                <li class="nav__list--item"><a href="index.html" class="active">HOME</a></li>
+                <li class="nav__list--item"><a href="bloglist.html">BLOG</a></li>
+                <li class="nav__list--item"><a href="about.html">ABOUT</a></li>
+                <li class="nav__list--item"><a href="contact.html">CONTACT</a></li>
             </ul>
+        </div>
         </nav>
     </header>
     <main>
