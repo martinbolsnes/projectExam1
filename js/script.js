@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'loop',
     focus: 'center',
     autoplay: true,
+    autoHeight: true,
     perPage: 3,
     breakpoints: {
       769: {
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       415: {
         perPage: 1,
+        focus: 'left',
       },
     },
   }).mount();
