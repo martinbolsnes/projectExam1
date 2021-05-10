@@ -64,7 +64,7 @@ main {
   padding-top: 100px;
   margin: auto;
   width: 85%;
-  height: 65%;
+  height: 75%;
   overflow: auto;
   -webkit-box-shadow: 0 0 150px var(--secondaryBlack);
   box-shadow: 0 0 150px var(--secondaryBlack);
