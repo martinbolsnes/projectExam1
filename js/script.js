@@ -38,8 +38,16 @@ getPosts(postsUrl); */
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {
     type: 'loop',
-    perPage: 3,
     focus: 'center',
     autoplay: true,
+    perPage: 3,
+    breakpoints: {
+      769: {
+        perPage: 2,
+      },
+      415: {
+        perPage: 1,
+      },
+    },
   }).mount();
 });
