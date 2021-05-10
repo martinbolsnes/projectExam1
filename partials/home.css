@@ -45,6 +45,7 @@ main {
   justify-content: flex-start;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
+  border-radius: 3px;
 }
 
 .logoHero {
