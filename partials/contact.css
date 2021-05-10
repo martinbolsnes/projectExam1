@@ -10,6 +10,7 @@ main {
 .contact__heading {
   grid-area: contact__heading;
   margin-top: 100px;
+  margin-left: 0;
 }
 
 .contactForm__section {

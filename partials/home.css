@@ -101,7 +101,6 @@ main {
 }
 
 .latestPosts__heading--text {
-  margin-left: 80px;
   margin-bottom: 0;
 }
 
@@ -168,6 +167,10 @@ main {
 
   .heroBtn__container {
     width: 70%;
+  }
+
+  .latestPosts__heading--text {
+    margin-left: 50px;
   }
 }
 
