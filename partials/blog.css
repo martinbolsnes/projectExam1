@@ -13,10 +13,57 @@ body {
   font-family: 'Jost', sans-serif;
   color: var(--mainBlack);
   margin-top: 100px;
+  margin-bottom: 40px;
   height: 50px;
+  width: 100%;
+  text-align: center;
 }
 
-.blog__container {
+.blogSection {
   width: 100%;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogHero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+  height: 450px;
+  -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
+  box-shadow: 0 0 5px var(--secondaryBlack);
+  border-radius: 20px;
+}
+
+.modal03 {
+  background-position: center;
+  background-size: cover;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: auto;
+  -webkit-box-shadow: 0 0 150px var(--secondaryBlack);
+  box-shadow: 0 0 150px var(--secondaryBlack);
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+.blogParagraph {
+  width: 60%;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--mainBlack);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

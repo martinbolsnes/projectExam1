@@ -1,35 +1,30 @@
-/* const postsUrl = '';
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get('id');
 
-async function getPosts() {
+async function getPosts(postId) {
   try {
     const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed'
+      'https://api.martinbols.tech/wp-json/wp/v2/posts/' + postId + '?_embed'
     );
     const jsonFromServer = await repsonse.json();
-    console.log(jsonFromServer);
+    console.log(postsResults);
     const postsResults = jsonFromServer;
 
-    document.querySelector('.loading').classList.add('hide');
-
-    for (let i = 0; i < postsResults.length; i++) {
-
-      if (i === 5) {
-        break;
-      }
-    }
+    /* document.querySelector('.loading').classList.add('hide'); */
   } catch {
-    document.querySelector('.alert').innerHTML = showAlertTouser(
+    /* document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
       'error'
-    );
+    ); */
   } finally {
-    setTimeout(function () {
+    /* setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
-    }, 3000);
+    }, 3000); */
   }
 }
 
-getPosts(postsUrl); */
+getPosts(id);
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {

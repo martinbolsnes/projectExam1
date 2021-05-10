@@ -130,7 +130,7 @@ header {
   color: var(--dandelion);
 }
 
-.active {
+.hamburgerMenu .active {
   color: var(--dandelion);
 }
 
