@@ -159,9 +159,15 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .aboutParagraph {
     font-size: 1rem;
+    width: 70%;
+    margin-top: -30px;
+  }
+
+  .heroBtn__container {
+    width: 70%;
   }
 }
 
