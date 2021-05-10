@@ -180,6 +180,10 @@ header {
   .hamburgerMenu {
     display: inline-block;
   }
+
+  .logo {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 767px) {

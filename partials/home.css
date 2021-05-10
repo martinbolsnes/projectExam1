@@ -170,3 +170,24 @@ main {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 500px) {
+  .heroSection {
+    height: 200px;
+    margin-top: 70px;
+  }
+
+  .aboutParagraph {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .heroBtn {
+    width: 65px;
+    height: 30px;
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+}
