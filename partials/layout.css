@@ -18,6 +18,9 @@ h1 {
 p {
   font-family: 'Montserrat', sans-serif;
 }
+a {
+  text-decoration: none;
+}
 
 footer {
   margin-top: auto;
