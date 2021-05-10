@@ -32,37 +32,54 @@ main {
 
 .heroSection {
   grid-area: heroSection;
-  background-image: url(../img/michal-pechardo-1HkVV14d8Bg-unsplash-compressed.jpg);
+  background-image: url(../img/julian-myles-2YGrbLlbz6Y-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   width: 100%;
   height: 450px;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
 }
 
-.heroBtn__container {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 90%;
+.logoHero {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3.5rem;
+  color: var(--mainBlack);
+  text-shadow: 1.5px 2px var(--dandelion);
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
+.aboutParagraph {
+  grid-area: aboutParagraph;
+  width: 70%;
+  height: 300px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
 .heroBtn {
-  width: 155px;
-  height: 45px;
+  width: 200px;
+  height: 55px;
   font-family: 'Jost', sans-serif;
-  font-size: 1.3rem;
-  background-color: var(--mainBlack);
-  color: var(--white);
-  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  color: var(--mainBlack);
+  border: solid 3px var(--mainBlack);
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
@@ -70,23 +87,8 @@ main {
 }
 
 .heroBtn:hover {
-  background-color: var(--white);
-  border: solid 2px var(--secondaryBlack);
-  color: var(--mainBlack);
-}
-
-.aboutParagraph {
-  grid-area: aboutParagraph;
-  width: 75%;
-  margin-left: 80px;
-  margin-bottom: 10px;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.7rem;
-  font-size: 1.1rem;
+  background-color: var(--mainBlack);
+  color: var(--white);
 }
 
 .latestPosts__heading {
