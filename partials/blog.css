@@ -37,6 +37,7 @@ body {
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
   border-radius: 20px;
+  border: solid 2px var(--mainBlack);
 }
 
 .modal03 {
