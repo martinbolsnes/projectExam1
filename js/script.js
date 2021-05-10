@@ -1,30 +1,39 @@
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get('id');
+/* const postsUrl = '';
 
-async function getPosts(postId) {
+async function getPosts() {
   try {
     const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts/' + postId + '?_embed'
+      'https://api.martinbols.tech/wp-json/wp/v2/posts/?_embed'
     );
     const jsonFromServer = await repsonse.json();
-    console.log(postsResults);
     const postsResults = jsonFromServer;
+    console.log(postsResults);
 
-    /* document.querySelector('.loading').classList.add('hide'); */
+    document.querySelector('.loading').classList.add('hide');
+
+    for (let i = 0; i < postsResults.length; i++) {
+      document.querySelectorAll(
+        '.titleBackground'
+      ).innerHTML += `<a href="blogList.html?id=${postsResults[i].id}">
+    <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>`;
+
+      if (i === 5) {
+        break;
+      }
+    }
   } catch {
-    /* document.querySelector('.alert').innerHTML = showAlertTouser(
+    document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
       'error'
-    ); */
+    );
   } finally {
-    /* setTimeout(function () {
+    setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
-    }, 3000); */
+    }, 3000);
   }
 }
 
-getPosts(id);
+getPosts(postsUrl); */
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {
