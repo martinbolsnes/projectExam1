@@ -161,13 +161,6 @@ main {
   text-decoration: none;
 }
 
-.fa-caret-left,
-.fa-caret-right {
-  font-size: 3rem;
-  color: var(--mainBlack);
-  cursor: pointer;
-}
-
 @media (max-width: 1024px) {
   .heroSection {
     height: 350px;

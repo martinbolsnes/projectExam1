@@ -23,6 +23,10 @@ async function getPosts(postId) {
     document.querySelector(
       '.modal03'
     ).style.backgroundImage = `url('${postsArray._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}')`;
+
+    document.querySelector(
+      '.wpContent'
+    ).innerHTML = `${postsArray.content.rendered}`;
   } catch {
     /* document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',

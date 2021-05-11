@@ -3,7 +3,7 @@ const postsUrl = '';
 async function getPosts() {
   try {
     const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed&per_page=20'
+      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed&per_page=30'
     );
     const jsonFromServer = await repsonse.json();
     const postsResults = jsonFromServer;
