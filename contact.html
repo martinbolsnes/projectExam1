@@ -56,16 +56,16 @@
             <form class="contactForm">
                 <label for="subject">Subject</label>
                 <input type="text" name="subject" id="subject">
-                <p class="formError subjectError">Please enter your subject</p>
+                <p class="formError subjectError">Subject must be longer than 15 characters</p>
                 <label for="fullName">Name</label>
                 <input type="text" name="fullName" id="fullName">
-                <p class="formError fullNameError">Please enter your name</p>
+                <p class="formError fullNameError">Name must be longer than 5 characters</p>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
                 <p class="formError emailError">Please enter a valid email</p>
                 <label for="message">Message...</label> 
                 <textarea name="message" id="message"></textarea>
-                <p class="formError messageError"></p>
+                <p class="formError messageError">Message must be longer than 25 characters</p>
         
                 <button id="submitBtn">Submit</button>
             </form>
