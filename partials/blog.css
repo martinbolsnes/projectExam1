@@ -139,12 +139,6 @@ figure {
   margin-bottom: 40px;
 }
 
-.wp-block-group.alignwide {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 @media (max-width: 1024px) {
   .blog__heading {
     font-size: 2rem;
