@@ -340,8 +340,9 @@ figure {
   }
 
   .modal03 {
-    height: 35%;
+    height: 40%;
     width: 100%;
+    margin-top: 100px;
     transform: rotate(90deg);
   }
 }
