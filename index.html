@@ -37,7 +37,6 @@
     <link rel="mask-icon" href="img/favicon_package_v0.16 (1)/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="partials/splide/splide.min.css">
     <title>Home - Wanderlust</title>
 </head>
 <body>
@@ -88,66 +87,34 @@
             <h1 class="latestPosts__heading--text">Latest Posts</h1>
         </div>
         <section class="latestPost__section">
-            <div class="splide">
-                <div class="splide__track">
-                    <div class="splide__list">
-                        <div class="splide__slide" id="slide01">
-                            <div class="splide__container card" style="background-image: url(./img/stefan-widua-9I2t_U-9Gog-unsplash-compressed.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">Yosemite</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide" id="slide02">
-                            <div class="splide__container card" style="background-image: url(./img/oliver-niblett-wh-7GeXxItI-unsplash-compressed.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">New York</h3>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide" id="slide03">
-                            <div class="splide__container card" style="background-image: url(./img/andrea-leopardi-QVD3Xht9txA-unsplash-compressed.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">Patagonia</h3>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide" id="slide04">
-                            <div class="splide__container card" style="background-image: url(./img/mesut-kaya-eOcyhe5-9sQ-unsplash-compressed.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">Turkey</h3>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide" id="slide05">
-                            <div class="splide__container card" style="background-image: url(./img/jezael-melgoza-layMbSJ3YOE-unsplash-compressed.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">Tokyo</h3>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide" id="slide06">
-                            <div class="splide__container card" style="background-image: url(./img/federico-di-dio-photography-nDZolucukwU-unsplash.jpg);">
-                                <div class="titleBackground">
-                                    <a href="bloglist.html">
-                                    <h3 class="cardTitle">Lofoten</h3>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="wrapper">
+                <div id="carousel">
+                  <div id="content">
+                  </div>
                 </div>
-            </div>
+                <button id="prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                  </svg>
+                </button>
+                <button id="next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                  </svg>
+                </button>
+              </div>
         </section>
     </main>
     <footer>
@@ -167,6 +134,5 @@
     <script src="js/components/alert.js"></script>
     <script src="js/windowTransition.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/splide/splide.min.js"></script>
     </body>
 </html>

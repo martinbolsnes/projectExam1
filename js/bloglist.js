@@ -13,12 +13,11 @@ async function getPosts() {
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.blogList__section').innerHTML += `
-        <div class="card" style="background-image: url('${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}');">
-        <div class="titleBackground">
-        <a class="blogLink" href="blog.html?id=${postsResults[i].id}">
-        <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>
-        </a>
-        </div>
+      <div class="card__containerBlog">
+      <a href="blog.html?id=${postsResults[i].id}">
+        <img class="cardBlog" src="${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}"/>
+      </a>
+        <h3 class="cardTitleBlog">${postsResults[i].title.rendered}</h3>
         </div>`;
     }
   } catch {

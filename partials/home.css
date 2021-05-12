@@ -121,44 +121,80 @@ main {
   margin-top: 20px;
 }
 
-.card {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 2px black;
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.card__container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.cardHome {
+  border: solid 1px black;
   border-radius: 10px;
-  height: 250px;
-  width: 25%;
-  margin: 20px;
+  height: 180px;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   box-shadow: 2px 2px lightgray;
   display: flex;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
-}
-
-.cardImg {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.titleBackground {
-  width: 100%;
-  height: 20%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  display: flex;
-  align-self: flex-end;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
 .cardTitle {
-  color: var(--white);
+  color: var(--mainBlack);
   font-family: 'Montserrat', sans-serif;
-}
-
-.blogLink {
-  text-decoration: none;
+  margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -218,7 +254,22 @@ main {
   }
 
   .latestPost__section {
-    height: 250px;
+    height: fit-content;
     margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .card__container,
+  .card {
+    width: 200px;
+  }
+
+  #prev,
+  #next {
+    display: none;
+  }
+
+  #content {
+    grid-gap: 20px;
   }
 }
