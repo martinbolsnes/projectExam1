@@ -217,6 +217,15 @@ main {
   .latestPosts__heading--text {
     margin-left: 50px;
   }
+
+  .latestPost__section {
+    margin-left: 50px;
+  }
+
+  #prev,
+  #next {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {

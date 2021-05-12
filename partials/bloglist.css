@@ -109,17 +109,19 @@ main {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .card__containerBlog {
+    width: 40%;
+  }
+}
+
 @media (max-width: 769px) {
-  .card {
-    width: 33%;
-    height: 200px;
+  .cardBlog {
+    width: 75%;
+    height: 180px;
   }
 
-  .titleBackground {
-    border-radius: 4px;
-  }
-
-  .cardTitle {
+  .cardTitleBlog {
     font-size: 1rem;
   }
 }
@@ -129,8 +131,12 @@ main {
     font-size: 1.5rem;
   }
 
-  .card {
-    width: 65%;
+  .card__containerBlog {
+    width: 90%;
+  }
+
+  .cardBlog {
+    width: 70%;
     height: 170px;
   }
 }
