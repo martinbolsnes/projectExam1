@@ -1,4 +1,5 @@
 const postsUrl = '';
+const viewMore = document.getElementById('viewMoreBtn');
 
 async function getPosts() {
   try {

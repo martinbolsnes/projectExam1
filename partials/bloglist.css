@@ -71,7 +71,7 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
-.viewMoreBtn {
+#viewMoreBtn {
   display: flex;
   align-self: center;
   align-items: center;
@@ -89,7 +89,7 @@ main {
   cursor: pointer;
 }
 
-.viewMoreBtn:hover {
+#viewMoreBtn:hover {
   background-color: var(--mainBlack);
   color: var(--white);
 }
