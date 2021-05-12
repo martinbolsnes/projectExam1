@@ -21,15 +21,15 @@ async function getPosts() {
         <h3 class="cardTitleBlog">${postsResults[i].title.rendered}</h3>
         </div>`;
     }
-  } catch {
-    /* document.querySelector('.alert').innerHTML = showAlertTouser(
+  } catch (error) {
+    document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
       'error'
-    ); */
+    );
   } finally {
-    /*  setTimeout(function () {
+    setTimeout(function () {
       document.querySelector('.alert').innerHTML = '';
-    }, 3000); */
+    }, 3000);
   }
 }
 

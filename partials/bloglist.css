@@ -34,7 +34,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .card__containerBlog {
@@ -105,8 +105,21 @@ main {
   margin-bottom: 500px;
 }
 
+.loading img {
+  width: 400px;
+  height: 400px;
+}
+
 .hide {
   display: none;
+}
+
+.error {
+  background-color: rgb(255 124 124);
+  color: white;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
 }
 
 @media (max-width: 1024px) {
@@ -138,5 +151,10 @@ main {
   .cardBlog {
     width: 70%;
     height: 170px;
+  }
+
+  .loading img {
+    width: 300px;
+    height: 300px;
   }
 }

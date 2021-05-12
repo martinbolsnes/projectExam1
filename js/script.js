@@ -16,7 +16,7 @@ async function getPosts() {
       <div class="card__container">
       <a href="blog.html?id=${postsResults[i].id}">
         <img class="cardHome" src="${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}"/>
-        <h3 class="cardTitle">${postsResults[i].title.rendered}</h3>        
+        <h3 class="cardTitleHome">${postsResults[i].title.rendered}</h3>        
         </a>
         </div>`;
 
