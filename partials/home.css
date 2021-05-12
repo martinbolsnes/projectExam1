@@ -156,12 +156,14 @@ main {
   left: 0;
   transform: translate(50%, -50%);
   display: none;
+  background-color: var(--dandelion);
 }
 
 #next {
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
+  background-color: var(--dandelion);
 }
 
 #content {
