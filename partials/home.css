@@ -134,8 +134,7 @@ main {
 }
 
 #carousel::-webkit-scrollbar {
-  height: 5px;
-  color: var(--dandelion);
+  height: 0;
 }
 
 #prev,
