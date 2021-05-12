@@ -21,14 +21,14 @@ h1 {
 p {
   font-family: 'Montserrat', sans-serif;
 }
-a {
+/* a {
   text-decoration: none;
   width: fit-content;
   height: fit-content;
   display: block;
   padding: 0;
   margin: 0;
-}
+} */
 
 footer {
   margin-top: auto;
