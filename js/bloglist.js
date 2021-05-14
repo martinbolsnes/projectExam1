@@ -1,9 +1,10 @@
 const postsUrl = '';
+/* const viewMore = document.getElementById('viewMoreBtn'); */
 
 async function getPosts() {
   try {
     const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed&per_page=30'
+      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed&per_page=10'
     );
     const jsonFromServer = await repsonse.json();
     const postsResults = jsonFromServer;
@@ -19,6 +20,10 @@ async function getPosts() {
       </a>
         <h3 class="cardTitleBlog">${postsResults[i].title.rendered}</h3>
         </div>`;
+
+      if (i === 9) {
+        break;
+      }
     }
   } catch (error) {
     document.querySelector('.alert').innerHTML = showAlertTouser(

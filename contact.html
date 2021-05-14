@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wanderlust contactpage - Wanderlust travelblog">
+    <meta name="description" content="Wanderlust contactpage - Contact us if you have any question to us. Just fill in the form, send us a message and we will get back at you">
     <script src="https://kit.fontawesome.com/aaba5ad25b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="partials/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -73,7 +73,7 @@
         </div>
         <section class="contactForm__section">
             <div class="contactForm__container">
-            <form class="contactForm">
+            <form id="contactForm">
                 <label for="subject">Subject</label>
                 <input type="text" name="subject" id="subject">
                 <p class="formError subjectError">Subject must be longer than 15 characters</p>
@@ -87,10 +87,10 @@
                 <textarea name="message" id="message"></textarea>
                 <p class="formError messageError">Message must be longer than 25 characters</p>
         
-                <button id="submitBtn">Submit</button>
+                <input type="submit" id="submitBtn" value="Submit"></input>
             </form>
-        </div>
-            <div id="imgToClick" class="contactImg__container"></div>
+        </div> 
+            <div id="imgToClick" class="contactImg__container" title="Picture of mailboxes"></div>
             <div id="imgModal" class="modal02">
                 <span class="close">&times;</span>
             </div>

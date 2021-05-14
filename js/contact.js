@@ -1,8 +1,37 @@
-const submit = document.querySelector('#submitBtn');
+const submit = document.getElementById('submitBtn');
 const fullNameError = document.querySelector('.fullNameError');
 const subjectError = document.querySelector('.subjectError');
 const emailError = document.querySelector('.emailError');
 const messageError = document.querySelector('.messageError');
+
+const postsUrl = '';
+
+/* async function getPosts() {
+  try {
+    const repsonse = await fetch(
+      'http://api.martinbols.tech/wp-json/wp/v2/pages/15'
+    );
+    const jsonFromServer = await repsonse.json();
+    const postsResults = jsonFromServer;
+    console.log(postsResults);
+
+    document.querySelector('.loading').classList.add('hide');
+
+    document.querySelector('.contactForm__container').innerHTML = `
+    ${postsResults.content.rendered}`;
+  } catch {
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+        'An error occured (Cannot load content)',
+        'error'
+      );
+  } finally {
+    setTimeout(function () {
+        document.querySelector('.alert').innerHTML = '';
+      }, 3000); 
+  }
+}
+
+getPosts(postsUrl); */
 
 submit.onclick = function (event) {
   event.preventDefault();
@@ -50,3 +79,43 @@ function validateEmail(emailAddress) {
   const isEmailValid = emailExpression.test(emailAddress);
   return isEmailValid;
 }
+
+/* const contactForm = document.querySelector('.wpcf7-form');
+
+contactForm.addEventListener('submit', handleFormSubmit);
+
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const url = form.action;
+
+  try {
+    const formData = new FormData(form);
+    const responseData = await postFormDataAsJson({ url, formData });
+    console.log({ responseData });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function postFormDataAsJson({ url, formData }) {
+  const plainFormData = object.fromEntries(formData.entries());
+  const formDataJsonString = JSON.stringify(plainFormData);
+  const fetchOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: formDataJsonString,
+  };
+
+  const response = await fetch(url, fetchOptions);
+
+  if (!response.ok) {
+    const errorMessage = await response.text();
+    throw new Error(errorMessage);
+  }
+
+  return response.json();
+} */
