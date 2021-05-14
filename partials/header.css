@@ -22,7 +22,6 @@ header {
 }
 
 #menuToggle a {
-  text-decoration: none;
   color: var(--white);
 }
 
@@ -91,7 +90,6 @@ header {
 
 .logo a,
 .nav__list--item a {
-  text-decoration: none;
   color: var(--white);
 }
 
@@ -140,7 +138,6 @@ header {
 
 .hamburgerMenu__list--item a {
   font-size: 1.4rem;
-  text-decoration: none;
   padding: 10px;
   color: var(--white);
   font-family: 'Jost', sans-serif;

@@ -10,7 +10,6 @@ body {
 }
 
 .blog__heading {
-  font-family: 'Jost', sans-serif;
   color: var(--mainBlack);
   margin-top: 100px;
   margin-bottom: 40px;
@@ -132,8 +131,6 @@ figure {
 
 .has-text-align-left {
   width: 70%;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
   color: var(--mainBlack);
   margin-top: 20px;
   margin-bottom: 40px;
@@ -262,8 +259,6 @@ figure {
 
   .has-text-align-left {
     width: 80%;
-    font-size: 1rem;
-    line-height: 1.4rem;
   }
 
   .modal03 {
@@ -273,7 +268,6 @@ figure {
 
 @media (max-width: 500px) {
   .blog__heading {
-    font-size: 1.5rem;
     margin-bottom: 0px;
   }
 
@@ -329,8 +323,6 @@ figure {
 
   .has-text-align-left {
     width: 85%;
-    font-size: 1rem;
-    line-height: 1.4rem;
   }
 
   .modal03 {

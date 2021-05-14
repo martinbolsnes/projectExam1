@@ -113,7 +113,7 @@ textarea {
 }
 
 .contactImg__container {
-  width: 40%;
+  width: 45%;
   height: 350px;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
@@ -153,7 +153,7 @@ textarea {
 
   .contactForm__container,
   .contactImg__container {
-    width: 60%;
+    width: 70%;
   }
 
   .contactImg__container {

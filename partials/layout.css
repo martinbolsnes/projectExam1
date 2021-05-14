@@ -20,6 +20,8 @@ h3 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 a {
   text-decoration: none;
@@ -28,4 +30,18 @@ a {
 footer {
   margin-top: auto;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }

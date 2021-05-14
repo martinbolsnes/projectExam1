@@ -68,9 +68,6 @@ main {
   align-items: center;
   align-self: flex-start;
   justify-content: space-evenly;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 2rem;
-  font-size: 1.5rem;
 }
 
 .heroBtn__container {
@@ -82,7 +79,6 @@ main {
 .heroBtn {
   width: 200px;
   height: 55px;
-  font-family: 'Jost', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   background-color: var(--white);
@@ -211,7 +207,6 @@ main {
   }
 
   .aboutParagraph {
-    font-size: 1.5rem;
     width: 70%;
     margin-left: 50px;
   }
@@ -251,8 +246,6 @@ main {
   }
 
   .aboutParagraph {
-    font-size: 1rem;
-    line-height: 1.2rem;
     width: 90%;
     margin-left: 20px;
     margin-top: 20px;

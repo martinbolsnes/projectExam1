@@ -28,7 +28,7 @@ main {
 .aboutUs__text {
   width: 70%;
   font-size: 1.2rem;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
   color: var(--mainBlack);
 }
 
@@ -45,6 +45,7 @@ main {
   width: 60%;
   height: 350px;
   margin-bottom: 50px;
+  margin-top: 40px;
   -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
   box-shadow: 0 0 5px var(--secondaryBlack);
 }
@@ -109,4 +110,21 @@ main {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .aboutUs__img--container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUs__text {
+    width: 85%;
+  }
+
+  .aboutUs__img--container {
+    width: 95%;
+    height: 200px;
+  }
 }

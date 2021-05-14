@@ -25,14 +25,14 @@ async function getPosts() {
       }
     }
   } catch {
-    /* document.querySelector('.alert').innerHTML = showAlertTouser(
-        'An error occured (Cannot load content)',
-        'error'
-      ); */
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+      'An error occured (Cannot load content)',
+      'error'
+    );
   } finally {
-    /* setTimeout(function () {
-        document.querySelector('.alert').innerHTML = '';
-      }, 3000); */
+    setTimeout(function () {
+      document.querySelector('.alert').innerHTML = '';
+    }, 3000);
   }
 }
 
