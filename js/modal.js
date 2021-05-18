@@ -6,12 +6,12 @@ img.onclick = function () {
   modal.style.display = 'block';
 };
 
-/* window.onclick = function (event) {
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
-}; */
-
-span.onclick = function () {
-  modal.style.display = 'none';
 };

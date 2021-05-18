@@ -1,11 +1,8 @@
-const postsUrl = '';
-/* const viewMore = document.getElementById('viewMoreBtn'); */
+const postsUrl = 'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed';
 
-async function getPosts() {
+async function getPosts(postsUrl) {
   try {
-    const repsonse = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts?_embed&per_page=10'
-    );
+    const repsonse = await fetch(postsUrl);
     const jsonFromServer = await repsonse.json();
     const postsResults = jsonFromServer;
     console.log(postsResults);
@@ -38,3 +35,19 @@ async function getPosts() {
 }
 
 getPosts(postsUrl);
+
+const viewMoreBtn = document.getElementById('viewMoreBtn');
+const viewMoreDiv = document.querySelector('.viewMoreDiv');
+
+viewMoreBtn.onclick = function () {
+  getPosts(postsUrl + '&page=2');
+  viewMoreDiv.innerHTML = ` <div class="loading">
+  <img
+      src="https://flevix.com/wp-content/uploads/2019/07/Ajax-Preloader.gif"
+      alt="Loading Gif"/>
+</div>`;
+  setTimeout(function () {
+    viewMoreDiv.innerHTML = ``;
+  }, 1000);
+  viewMoreBtn.style.display = 'none';
+};

@@ -34,6 +34,7 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .card__containerBlog {
@@ -70,11 +71,15 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
-#viewMoreBtn {
+.viewMoreDiv {
+  margin-bottom: 40px;
+  width: 100%;
   display: flex;
-  align-self: center;
   align-items: center;
   justify-content: center;
+}
+
+#viewMoreBtn {
   width: 200px;
   height: 45px;
   font-family: 'Jost', sans-serif;
