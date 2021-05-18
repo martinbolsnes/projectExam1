@@ -7,7 +7,7 @@ async function getPosts(postsUrl) {
     const postsResults = jsonFromServer;
     console.log(postsResults);
 
-    document.querySelector('.loading').classList.add('hide');
+    /* document.querySelector('.loading').classList.add('hide'); */
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector('.blogList__section').innerHTML += `
