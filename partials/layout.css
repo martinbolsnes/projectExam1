@@ -10,13 +10,17 @@ body {
 
 main {
   max-width: 1200px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Jost', sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
 }
 
 p {
@@ -56,5 +60,9 @@ footer {
   p {
     font-size: 1rem;
     line-height: 1.4rem;
+  }
+
+  main {
+    margin-top: 70px;
   }
 }
