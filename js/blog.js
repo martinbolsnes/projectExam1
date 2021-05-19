@@ -11,7 +11,7 @@ async function getPosts(postId) {
     const postsArray = jsonResults;
     console.log(postsArray);
 
-    document.title = postsArray.title.rendered;
+    document.title = postsArray.title.rendered + ' - Wanderlust';
 
     document.querySelector(
       '.blog__heading'
