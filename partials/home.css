@@ -249,15 +249,6 @@ main {
     width: 300px;
     height: 300px;
   }
-
-  #carousel::-webkit-scrollbar {
-    background-color: transparent;
-  }
-
-  #carousel::-webkit-scrollbar-thumb {
-    background: var(--dandelion);
-    border-radius: 10px;
-  }
 }
 
 @media (max-width: 500px) {
