@@ -10,6 +10,7 @@ body {
 
 main {
   max-width: 1200px;
+  margin-top: 100px;
 }
 
 h1,
@@ -30,6 +31,18 @@ a {
 footer {
   margin-top: auto;
   width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  background-color: rgb(255 124 124);
+  color: white;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
 }
 
 @media (max-width: 1024px) {

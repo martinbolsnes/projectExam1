@@ -24,7 +24,6 @@ main {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  margin-top: 100px;
 }
 
 .blogList__section {
@@ -112,18 +111,6 @@ main {
 .loading img {
   width: 400px;
   height: 320px;
-}
-
-.hide {
-  display: none;
-}
-
-.error {
-  background-color: rgb(255 124 124);
-  color: white;
-  border: solid 1px red;
-  padding: 20px;
-  transition: 2s;
 }
 
 @media (max-width: 1024px) {
