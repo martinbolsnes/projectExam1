@@ -12,7 +12,7 @@ async function getPosts() {
     document.querySelector('.loadingHome').classList.add('hide');
 
     for (let i = 0; i < postsResults.length; i++) {
-      document.querySelector('#content').innerHTML += `
+      document.querySelector('.carousel__content').innerHTML += `
       <div class="card__container">
       <a href="blog.html?id=${postsResults[i].id}">
         <img class="cardHome" src="${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}"/>
@@ -40,8 +40,8 @@ getPosts(postsUrl);
 
 const gap = 16;
 
-const carousel = document.getElementById('carousel'),
-  content = document.getElementById('content'),
+const carousel = document.querySelector('.carousel'),
+  content = document.querySelector('.carousel__content'),
   next = document.getElementById('next'),
   prev = document.getElementById('prev');
 
