@@ -38,7 +38,7 @@ async function getPosts() {
 
 getPosts(postsUrl);
 
-const gap = 16;
+const gap = 10;
 
 const carousel = document.querySelector('.carousel'),
   content = document.querySelector('.carousel__content'),
