@@ -10,7 +10,7 @@ span.onclick = function () {
   modal.style.display = 'none';
 };
 
-document.onclick = function (event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
