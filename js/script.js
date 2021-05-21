@@ -39,11 +39,10 @@ async function getPosts() {
 getPosts(postsUrl);
 
 const gap = 10;
-
-const carousel = document.querySelector('.carousel'),
-  content = document.querySelector('.carousel__content'),
-  next = document.getElementById('next'),
-  prev = document.getElementById('prev');
+const carousel = document.querySelector('.carousel');
+const content = document.querySelector('.carousel__content');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
 
 next.addEventListener('click', (e) => {
   carousel.scrollBy(width + gap, 0);
@@ -54,6 +53,7 @@ next.addEventListener('click', (e) => {
     next.style.display = 'none';
   }
 });
+
 prev.addEventListener('click', (e) => {
   carousel.scrollBy(-(width + gap), 0);
   if (carousel.scrollLeft - width - gap <= 0) {
