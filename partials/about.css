@@ -140,5 +140,6 @@ main {
   .modal01 {
     height: 35%;
     width: 95%;
+    margin-bottom: 400px;
   }
 }

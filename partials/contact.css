@@ -193,4 +193,10 @@ textarea {
     height: 35px;
     font-size: 1.1rem;
   }
+
+  .modal02 {
+    height: 35%;
+    width: 95%;
+    margin-bottom: 350px;
+  }
 }
