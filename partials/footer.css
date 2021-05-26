@@ -26,6 +26,11 @@ footer {
 
 .soMeLinks {
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--mainBlack);
 }
 
 @media (max-width: 500px) {
