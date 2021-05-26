@@ -29,7 +29,7 @@ footer {
   text-decoration: none;
 }
 
-a:visited {
+.soMeLinks:visited {
   color: var(--mainBlack);
 }
 
